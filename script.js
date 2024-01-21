@@ -78,6 +78,7 @@ const viwe = () => {
             document.querySelector(`.top-text h1:nth-child(1)`).style.color = `white`;
             document.querySelector(`.top-text h1:nth-child(3)`).style.color = `#504A45`;
             document.querySelector(`.top-text h1:nth-child(2)`).style.color = `#504A45`;
+            document.querySelector(``)
             console.log(flag);
             // document.querySelector(`.right-cont`).style.backgroundImage = `URL(${})`;
         }else if(dets.target.innerHTML === "Project"){
@@ -114,8 +115,11 @@ const viweCursor = () => {
         cursor.style.display = `block`;
         cursor.style.opacity = `1`;
         cursor.style.scale = `1`;
+        cursor.style.cursor = `none`;
+        
     });
     swiper.addEventListener("mouseleave",() => {
+        cursor.style.cursor = ``;
         cursor.style.display = `none`;
         cursor.style.opacity = `0`;
         cursor.style.scale = `0`;
@@ -134,4 +138,44 @@ gsap.to("#main",{
         markers:true
 
     }
+})
+let tl = gsap.timeline();
+tl.from(".hed-fev",{
+    // x:100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.to(".hed-fev",{
+    // x:-100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.from(".hed-sec",{
+    // x:100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.to(".hed-sec",{
+    // x:-100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.from(".hed-thi",{
+    // x:100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.to(".hed-thi",{
+    // x:-100,
+    opacity:0,
+    // duration:.5,
+    stagger:.3
+})
+tl.to("#loder",{
+    display: "none",
 })

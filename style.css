@@ -20,6 +20,7 @@ body {
   position: fixed;
   /* gap: 30px; */
   z-index: 99;
+  display: none;
   /* position: relative; */
 }
 #loder h1{
@@ -497,7 +498,6 @@ nav .right a:hover::after {
   margin-top: 30px;
   width: 120%;
   font-family: gilroy;
-  background-color: #fe330a;
 }
 .left-cont .text-center .text-upper .top-text h1:nth-child(1) {
   color: white;
@@ -510,18 +510,19 @@ nav .right a:hover::after {
 }
 .right-cont {
   width: 55%;
-  background-color: antiquewhite;
   height: 100%;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url();
 }
 .img_fev{
   width: 100%;
   height: 100%;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
+}
+.img_fev img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .swiper {
   width: 100%;

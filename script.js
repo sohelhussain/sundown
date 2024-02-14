@@ -166,7 +166,7 @@ const viweCursor = () => {
     cursor.style.cursor = `none`;
   });
   swiper.addEventListener("mouseleave", () => {
-    cursor.style.cursor = ``;
+    cursor.style.cursor = `inherit`;
     cursor.style.display = `none`;
     cursor.style.opacity = `0`;
     cursor.style.scale = `0`;
@@ -182,14 +182,11 @@ gsap.to("#main", {
     start: "top 100%",
     end: "top 0%",
     scrub: 1,
-    markers: true,
   },
 });
 let tl = gsap.timeline();
 tl.from(".hed-fev", {
-  // x:100,
   opacity: 0,
-  // duration:.5,
   stagger: 0.3,
 });
 tl.to(".hed-fev", {

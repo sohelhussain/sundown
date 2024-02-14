@@ -152,6 +152,8 @@ So, get ready to flex those coding muscles and unleash your creativity! With Oby
 
 ## Screenshots
 
+![App Screenshot](screenshoot/Screen%20Shot%202024-02-14%20at%2014.12.52.png)
+
 ![App Screenshot](screenshoot/Screenshot%202024-02-14%20at%202.14.18 PM.png)
 
 ![App Screenshot](screenshoot/Screenshot%202024-02-14%20at%202.14.40 PM.png)

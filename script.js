@@ -144,7 +144,7 @@ const viwe = () => {
       document.querySelector(
         `.text-down`
       ).innerHTML = `We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.`;
-      console.log(dets.target.innerHTML);
+    
     }
   });
 };

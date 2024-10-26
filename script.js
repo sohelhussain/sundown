@@ -99,7 +99,7 @@ const viwe = () => {
             narrative to bring stories to life and provide end- 
             to-end design solutions from concept, design, and 
             architectural drawings to 3D renderings.`;
-      console.log(flag);
+      
       // document.querySelector(`.right-cont`).style.backgroundImage = `URL(${})`;
     } else if (dets.target.innerHTML === "Project") {
       document.querySelector(
